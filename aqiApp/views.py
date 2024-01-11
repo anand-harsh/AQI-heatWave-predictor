@@ -78,8 +78,7 @@ def predict_aqi(request):
     from sklearn.metrics import r2_score
     r2_score(Y_test, Y_predicted)
 
-# Developed By Team Codex
-# Credits:  Rishit Kumar, Harsh Anand (Github: anand-harsh)
+# Credits:  Harsh Anand (Github: anand-harsh)
     # Get the input values from the form
     city = request.GET['city']
     year = float(request.GET['year'])
@@ -108,5 +107,4 @@ def predict_aqi(request):
     # Return the result to the user
     return render(request, 'result.html', {'aqi': aqi, 'city': city, 'year': year, 'month': month, 'so2': so2, 'nh3': nh3, 'nox': nox, 'pm10': pm10, 'pm25': pm25})
 
-# Developed By Team Codex
-# Credits: Harsh Anand (Github: anand-harsh), Rishit Kumar
+# Credits: Harsh Anand (Github: anand-harsh)

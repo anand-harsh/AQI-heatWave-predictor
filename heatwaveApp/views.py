@@ -70,8 +70,7 @@ def predict_heatwave(request):
         from sklearn.metrics import r2_score
         r2_score(Y_test, Y_test_predicted)
 
-# Developed By Team Codex
-# Credits: Rishit Kumar , Harsh Anand (Github: anand-harsh)
+# Credits: Harsh Anand (Github: anand-harsh)
 
         # Get the input values from the form
         city=request.GET['city']
@@ -100,5 +99,5 @@ def predict_heatwave(request):
         # Return the result to the user
         return render(request, 'heatwave-result.html', {'heatindex': heatindex, 'city':city, 'year':year, 'month':month, 'rainfall':rainfall, 'mintemp':mintemp, 'maxtemp':maxtemp, 'maxhumidity':maxhumidity, 'minhumidity':minhumidity, 'minwindspeed':minwindspeed, 'maxwindspeed':maxwindspeed})
 
-# Developed By Team Codex
-# Credits: Harsh Anand (Github: anand-harsh), Rishit Kumar
+
+# Credits: Harsh Anand (Github: anand-harsh)

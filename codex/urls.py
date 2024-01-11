@@ -19,5 +19,4 @@ handler500='exceptions.views.error_500'
 urlpatterns += staticfiles_urlpatterns()
 
 
-# Developed By Team Codex
-# Credits: Harsh Anand (Github: anand-harsh), Rishit Kumar 
+# Credits: Harsh Anand (Github: anand-harsh)

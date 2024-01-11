@@ -63,5 +63,5 @@ np.set_printoptions(precision =2)
 from sklearn.metrics import r2_score
 r2_score(Y_test, Y_predicted)
 
-# Developed By Team Codex
-# Credits:  Rishit Kumar, Harsh Anand (Github: anand-harsh)
+
+# Credits: Harsh Anand (Github: anand-harsh)
